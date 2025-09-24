@@ -49,7 +49,7 @@ body, html {
 }
 
 .hero-text h1 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     margin: 0;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -57,7 +57,7 @@ body, html {
 }
 
 .hero-text h2 {
-    font-size: 4m;
+    font-size: 4em;
     margin: 10px 0 0 0;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
