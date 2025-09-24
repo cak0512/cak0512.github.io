@@ -173,11 +173,11 @@ footer p {
     }
     
     .hero-text h1 {
-        font-size: 2.2em;
+        font-size: 1.8em;
     }
     
     .hero-text h2 {
-        font-size: 3em;
+        font-size: 3.5em;
         line-height: 1.1; /* 行間を調整 */
         white-space: pre-line; /* 改行を保持 */
     }
@@ -204,11 +204,11 @@ footer p {
     }
     
     .hero-text h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     
     .hero-text h2 {
-        font-size: 2.5em;
+        font-size: 3em;
         line-height: 1.1; /* 行間を調整 */
         white-space: pre-line; /* 改行を保持 */
     }
