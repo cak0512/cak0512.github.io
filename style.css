@@ -13,7 +13,7 @@ body, html {
 
 /* ヒーローセクション */
 .hero {
-    background-color: #2c3e50; /* フォールバック背景色 */
+    background-color: #ffffff; /* フォールバック背景色 */
     background-image: url('./images/poster.png');
     background-size: cover;
     background-position: center;
