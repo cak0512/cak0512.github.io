@@ -1,0 +1,207 @@
+/* リセットCSS */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* ヒーローセクション */
+.hero {
+    background-image: url('images/poster.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero-text {
+    z-index: 2;
+    position: relative;
+    text-align: left;
+    max-width: 900px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 4em;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.hero-text h2 {
+    font-size: 2.2em;
+    margin: 10px 0 0 0;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+/* セクションスタイル */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+section h3 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ボタンスタイル */
+.button {
+    display: block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 20px auto 0 auto;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    text-align: center;
+    width: fit-content;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* SNSリンク */
+.sns {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+.sns-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sns-link {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid #667eea;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.sns-link:hover {
+    background-color: #667eea;
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* フッタースタイル */
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 8px 0;
+    opacity: 0.9;
+}
+
+/* アニメーション */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.8em;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.8em;
+    }
+    
+    section {
+        padding: 40px 15px;
+    }
+    
+    section h3 {
+        font-size: 1.8em;
+    }
+    
+    .sns-link {
+        display: block;
+        margin: 10px auto;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2.2em;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.4em;
+    }
+    
+    section {
+        padding: 30px 10px;
+    }
+    
+    .button {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+}
