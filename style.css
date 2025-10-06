@@ -18,7 +18,7 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll; /* モバイルでの表示を改善 */
+    background-attachment: scroll; /* 背景画像を固定 */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -72,6 +72,7 @@ section {
     max-width: 900px;
     margin: auto;
     animation: fadeInUp 0.8s ease-out;
+    background: transparent; /* 背景を透明に */
 }
 
 section h3 {
@@ -80,14 +81,16 @@ section h3 {
     color: #333;
     text-align: center;
     font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); /* 白い影を追加 */
 }
 
 section p {
     font-size: 1.1em;
-    color: #555;
+    color: #333; /* 少し濃い色に変更 */
     margin-bottom: 80px;
     text-align: center;
     line-height: 2.2; /* 行間をさらに広げる */
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); /* 白い影を追加 */
 }
 
 /* ボタンスタイル */
@@ -171,7 +174,7 @@ footer p {
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
     .hero {
-        background-attachment: scroll; /* モバイルでのパフォーマンス向上 */
+        background-attachment: fixed; /* 背景画像を固定 */
         min-height: 100vh; /* ビューポートの高さを確保 */
     }
     
