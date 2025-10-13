@@ -95,25 +95,18 @@ section p {
 
 /* ボタンスタイル */
 .button {
-    font-size: 1.1em;
-    font-weight: 700;
-    line-height: 1.5;
-    position: relative;
     display: block;
-    padding: 10px 20px;
-    cursor: pointer;
-    user-select: none;
-    transition: all 0.3s;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    border-radius: 0.5rem;
+    padding: 12px 30px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
+    text-decoration: none;
+    border-radius: 25px;
     margin: 20px auto 0 auto;
+    font-weight: 600;
+    transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    text-align: center;
     width: fit-content;
-    white-space: nowrap;
 }
 
 .button:hover {
