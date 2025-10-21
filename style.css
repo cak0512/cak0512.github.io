@@ -16,10 +16,11 @@ body, html {
     background-color: #ffffff; /* フォールバック背景色 */
     background-image: url('./images/poster.png');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: scroll; /* 背景画像を固定 */
+    background-attachment: scroll;
     height: 100vh;
+    min-height: 600px; /* 最小の高さを確保 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,8 +233,11 @@ section p {
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
     .hero {
-        background-attachment: fixed; /* 背景画像を固定 */
-        min-height: 100vh; /* ビューポートの高さを確保 */
+        background-attachment: scroll; /* モバイルではスクロールに変更 */
+        background-size: cover;
+        background-position: center center;
+        min-height: 100vh;
+        height: auto; /* 柔軟な高さ */
     }
     
     .hero-text h1 {
@@ -277,8 +281,12 @@ section p {
 
 @media (max-width: 480px) {
     .hero {
-        background-size: cover; /* モバイルでも背景をカバー */
+        background-size: cover;
         background-position: center center;
+        background-attachment: scroll; /* スマホでは確実にscrollに */
+        min-height: 100vh;
+        height: auto;
+        padding: 20px 10px; /* 小さな画面での余白確保 */
     }
     
     .hero-text h1 {
@@ -332,5 +340,23 @@ section p {
     
     .footer-left {
         margin-bottom: 20px;
+    }
+}
+
+/* 極小画面対応 */
+@media (max-width: 360px) {
+    .hero {
+        background-size: cover;
+        background-position: center center;
+        min-height: 80vh; /* 極小画面では少し小さく */
+        padding: 15px 5px;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.2em;
+    }
+    
+    .hero-text h2 {
+        font-size: 2.5em;
     }
 }
