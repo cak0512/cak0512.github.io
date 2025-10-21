@@ -148,17 +148,73 @@ section p {
 }
 
 /* フッタースタイル */
-footer {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+.tmuwo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #0b1c3f;
     color: white;
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 40px;
+    padding: 30px;
+    width: 100%;
 }
 
-footer p {
-    margin: 8px 0;
-    opacity: 0.9;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 50px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 200px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.org-name {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff6b6b; /* 赤系のアクセントカラー */
 }
 
 /* アニメーション */
@@ -203,6 +259,15 @@ footer p {
         margin: 10px auto;
         max-width: 200px;
     }
+    
+    .footer-content {
+        padding-left: min(18vw, 200px);
+    }
+    
+    .footer-logo img {
+        width: min(15vw, 130px);
+        height: min(15vw, 130px);
+    }
 }
 
 @media (max-width: 480px) {
@@ -228,5 +293,21 @@ footer p {
     .button {
         padding: 10px 25px;
         font-size: 0.9em;
+    }
+    
+    .tmuwo-footer {
+        padding: 20px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+    
+    .footer-left {
+        margin-bottom: 20px;
     }
 }
