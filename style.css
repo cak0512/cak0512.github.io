@@ -251,13 +251,18 @@ section p {
     }
     
     section h3 {
-        font-size: 1.8em;
+        font-size: 2em;
+    }
+    
+    section p {
+        font-size: 1.2em;
     }
     
     .sns-link {
         display: block;
         margin: 10px auto;
         max-width: 200px;
+        font-size: 1.1em;
     }
     
     .footer-content {
@@ -292,7 +297,25 @@ section p {
     
     .button {
         padding: 10px 25px;
-        font-size: 0.9em;
+        font-size: 1.1em;
+    }
+    
+    /* フォントサイズの調整 */
+    section h3 {
+        font-size: 2.2em;
+    }
+    
+    section p {
+        font-size: 1.3em;
+        line-height: 1.8;
+    }
+    
+    .org-name {
+        font-size: 18px;
+    }
+    
+    .footer-links a {
+        font-size: 16px;
     }
     
     .tmuwo-footer {
